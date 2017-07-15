@@ -1,0 +1,80 @@
+Git Commands
+
+git diff commit_id1 commit_id2
+// comparing two commits
+
+git diff 
+// comparing the working directory with the staging area
+
+git diff --staged
+// comparing the staging area with the most recent commit in the repository
+
+git log
+// shows the commits on the current branch
+// press "q" (quit) to stop viewing
+ 
+git log --stat 
+// more info on the logs:
+// viewing the statistics of commits (which files have changed, how many edits)
+// to stop viewing git log output, press "q" (which stands for quit)
+
+git log --graph --oneline branch_name branch_name
+// shows the branches' commits (that you choose to compare)
+// graph for visual form
+// oneline for simplifying the output
+
+git log -n1
+// only shows n number of commits
+
+git status
+// shows the branch you're on
+// shows the staging area vs working directory information
+
+git add
+// adding changed files to the staging area
+
+git branch
+// displays information about available branches 
+// shows which branch you're on with an *
+
+git branch new_branch_name
+// create a new branch with new_branch_name
+
+git checkout -b new_branch_name
+// use in detached 'HEAD' state
+// creates a new branch label to make it accessible
+// checkout new branch 
+
+git gc 
+// garbage collection / cleanup of unreachable commits
+
+git merge branch_name2
+git merge branch_name branch_name2
+// use to merge branches into the current checked out branch
+// the checked out branch will always be merged
+// the checked out branch will be the name of the new line
+// because checked out branch is included, only the name
+// of the other branch is needed; however, you can include
+// both branch names if preferred
+
+git commit -m "commit_message"
+// commit changes from staging area into the repository
+
+git init
+// initialize a git repository in a working directory
+
+git remote
+// view remotes
+
+git remote add remote_name url
+// create a remote
+// if only one remote, standard to name it "origin"
+
+git remote -v
+// "v" for "verbose"
+// outputs more information
+// in this case, shows the fetch and push urls for the remotes
+
+git push remote_name branch_name
+// remote (e.g., "origin") where you'd like to push to
+// local branch/repo that you'd like to push to it
