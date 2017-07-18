@@ -78,3 +78,6 @@ git remote -v
 git push remote_name branch_name
 // remote (e.g., "origin") where you'd like to push to
 // local branch/repo that you'd like to push to it
+
+git --version
+// displays the version of git installed
