@@ -69,6 +69,8 @@ git remote
 git remote add remote_name url
 // create a remote
 // if only one remote, standard to name it "origin"
+// "origin" named by default from a cloned github repo to local
+// "upstream" for original repositories before forking
 
 git remote -v
 // "v" for "verbose"
@@ -78,3 +80,23 @@ git remote -v
 git push remote_name branch_name
 // remote (e.g., "origin") where you'd like to push to
 // local branch/repo that you'd like to push to it
+
+git pull remote_name branch_name
+// remote (e.g., "origin") where you'd like to push to
+// local branch/repo that you'd like to push to it
+// same as doing [git fetch] + [git merge]
+
+git fetch remote_name branch_name
+// remote (e.g., "origin")
+// retrieve updates from a remote for your local branch
+// without having to worry about merges/conflicts
+// places the updates in a separate branch
+
+git fetch remote_name
+// retrieve updates for all branches in the remote
+
+git config --system core.longpaths true.
+// use if project exceeds Windows' path length limit. 
+// If you encounter an error when cloning you can work around it 
+// by modifying a configuration setting with this command
+
