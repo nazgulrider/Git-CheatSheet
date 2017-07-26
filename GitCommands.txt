@@ -103,3 +103,5 @@ git config --system core.longpaths true.
 // If you encounter an error when cloning you can work around it 
 // by modifying a configuration setting with this command
 
+git clone url
+// clones a repository with a given url (acquired from github)
