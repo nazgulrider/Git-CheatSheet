@@ -1,13 +1,17 @@
 Git Commands
 
-git diff commit_id1 commit_id2
-// comparing two commits
+-----------------------------------------------------------------------------------
 
 git diff 
 // comparing the working directory with the staging area
 
+git diff commit_id1 commit_id2
+// comparing two commits
+
 git diff --staged
 // comparing the staging area with the most recent commit in the repository
+
+-----------------------------------------------------------------------------------
 
 git log
 // shows the commits on the current branch
@@ -26,12 +30,18 @@ git log --graph --oneline branch_name branch_name
 git log -n1
 // only shows n number of commits
 
+-----------------------------------------------------------------------------------
+
 git status
 // shows the branch you're on
 // shows the staging area vs working directory information
 
+-----------------------------------------------------------------------------------
+
 git add
 // adding changed files to the staging area
+
+-----------------------------------------------------------------------------------
 
 git branch
 // displays information about available branches 
@@ -45,8 +55,12 @@ git checkout -b new_branch_name
 // creates a new branch label to make it accessible
 // checkout new branch 
 
+-----------------------------------------------------------------------------------
+
 git gc 
 // garbage collection / cleanup of unreachable commits
+
+-----------------------------------------------------------------------------------
 
 git merge branch_name2
 git merge branch_name branch_name2
@@ -57,11 +71,17 @@ git merge branch_name branch_name2
 // of the other branch is needed; however, you can include
 // both branch names if preferred
 
+-----------------------------------------------------------------------------------
+
 git commit -m "commit_message"
 // commit changes from staging area into the repository
 
+-----------------------------------------------------------------------------------
+
 git init
 // initialize a git repository in a working directory
+
+-----------------------------------------------------------------------------------
 
 git remote
 // view remotes
@@ -80,17 +100,25 @@ git remote -v
 git remote rm remote_name
 // remove a remote
 
+-----------------------------------------------------------------------------------
+
 git push remote_name branch_name
 // remote (e.g., "origin") where you'd like to push to
 // local branch/repo that you'd like to push to it
 
+-----------------------------------------------------------------------------------
+
 git --version
 // displays the version of git installed
+
+-----------------------------------------------------------------------------------
 
 git pull remote_name branch_name
 // remote (e.g., "origin") where you'd like to push to
 // local branch/repo that you'd like to push to it
 // same as doing [git fetch] + [git merge]
+
+-----------------------------------------------------------------------------------
 
 git fetch remote_name branch_name
 // remote (e.g., "origin")
@@ -101,10 +129,14 @@ git fetch remote_name branch_name
 git fetch remote_name
 // retrieve updates for all branches in the remote
 
+-----------------------------------------------------------------------------------
+
 git config --system core.longpaths true.
 // use if project exceeds Windows' path length limit. 
 // If you encounter an error when cloning you can work around it 
 // by modifying a configuration setting with this command
+
+-----------------------------------------------------------------------------------
 
 git clone url
 // clones a repository with a given url (acquired from github)
