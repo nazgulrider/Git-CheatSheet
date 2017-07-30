@@ -30,6 +30,10 @@ git log --graph --oneline branch_name branch_name
 git log -n1
 // only shows n number of commits
 
+git checkout -b branch_name commit_id
+// allows for the checkout of code at the commit ID
+// creates new branch with new branch_name 
+
 -----------------------------------------------------------------------------------
 
 git status
