@@ -59,6 +59,7 @@ git checkout -b new_branch_name
 // creates a new branch label to make it accessible
 // checkout new branch 
 
+
 -----------------------------------------------------------------------------------
 
 git gc 
@@ -103,6 +104,12 @@ git remote -v
 
 git remote rm remote_name
 // remove a remote
+
+git ls-remote origin
+//shows all branches, commit ids in remote repository
+
+git remote show origin
+//shows all branches in remote repository
 
 -----------------------------------------------------------------------------------
 
