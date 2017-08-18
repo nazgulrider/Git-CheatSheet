@@ -11,6 +11,10 @@ git diff commit_id1 commit_id2
 git diff --staged
 // comparing the staging area with the most recent commit in the repository
 
+git diff <local_branch> <origin/branch_name>
+//comparing the local branch to the remote equivalent branch
+// e.g. git diff master origin/master will compare local master branch with remote master branch
+
 -----------------------------------------------------------------------------------
 
 git log
