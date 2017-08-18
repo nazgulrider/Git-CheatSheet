@@ -54,6 +54,9 @@ git branch
 git branch new_branch_name
 // create a new branch with new_branch_name
 
+git checkout branch_name
+//checkout the branch with name "branch_name"
+
 git checkout -b new_branch_name
 // use in detached 'HEAD' state
 // creates a new branch label to make it accessible
